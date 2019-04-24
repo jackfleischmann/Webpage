@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #09F8F4; /* Light Blue */
+    color: #F50A1F;
+    background-image: url(https://media.giphy.com/media/A1TLQFjrajmUM/giphy.gif)
+  }
+  .bg-2 { 
+    background-color: #12E632; /* Dark Blue */
+    color: white;
+    background-image: url(https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif)
+  }
+  .bg-3 { 
+    background-color: #18ADF8; /* White */
+    color: #DDFF03;
+  }
+  .bg-4 { 
+    background-color: #EC300A; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#food">Favorite Foods</a></li>
+        <li><a href="#family">Family Members</a></li>
+        <li><a href="#show">Favorite Shows</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Welcome!</h3>
+  <img src="jackpic.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="350" height="350">
+  <h3>My name is Jack Fleischmann</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin" id="food">My Favorite Foods</h3>
+  <p>Steak, hamburgers, spaghetti bolonegese, steak burritos, pork fried rice with NO EGGS, pork xiao long bao </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-arrow"></span> Main
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin" id="family">My Family Members:</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>My dad's name is Steve Fleischmann. He was born and raised in Bellevue, WA. He LOVES food and is the most caring person I know. </p>
+      <img src="steveF.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>My mom's name is Patty Fleischmann. She was born and raised in the greater Los Angeles area. She went to UCSB and currently works as a family therapist. She is the best mom in the entire world. </p>
+      <img src="pattyF.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>My sister's name is Hannah and she is 20 years old. She went to SAAS for middle and highschool and currently attends Emory University in Atlanta. She is the smartest and kindest person I know. </p>
+      <img src="hannahF.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Container (Grid) -->
+<div class="container-fluid bg-4 text-center">
+  <h3 class="margin" id="show">My All Time Favorite T.V. Shows:</h3>
+  <p>Rick and Morty, Breaking Bad, American Dad, The Act, Workaholics, and many more.</p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-arrow"></span> Main
+  </a>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WNhH00OIPP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="item">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HhesaQXLuRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="item">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/apr31MFjg08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
+
+</body>
+</html>
